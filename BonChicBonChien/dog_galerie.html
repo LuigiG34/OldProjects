@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bon Chic Bon Chien</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+
+<section class="gallery min-vh-100">
+	<div class="container-lg p-2" style="background-color: #C3C3C3;">
+		<h1 class="text-center p-4" style="font-family: LeaSpar;">Galerie</h1>
+				<div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-4 mx-auto">
+			<div class="col">
+				<img src="avis/img/pic/chat.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/caniche_2.jpeg" class="gallery-item">
+			</div>
+		</div>
+
+		<div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-4 mx-auto">
+
+			<div class="col">
+				<img src="avis/img/pic/SmallDog01.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/SmallDog02.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/SmallDog03.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/SmallDog05.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/Dog02.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/Dog05.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/SmallDog04.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/Dog01.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/Dog03.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/caniche_1.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/SmallDog06.jpeg" class="gallery-item">
+			</div>
+			<div class="col">
+				<img src="avis/img/pic/Dog04.jpeg" class="gallery-item">
+			</div>
+	</div>
+</div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="avis/img/SmallDog01.png" class="modal-img">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<style>
+
+	.gallery{
+		padding: 4em 4em;	
+}
+	.gallery-item{
+		width: 100%;
+		height: 80%;
+		border-radius: 5px;
+		border: solid #C3C3C3 1px;
+		cursor: pointer;
+
+}
+	#gallery-modal .modal-img{
+		width: 100%;
+		height: 100%;
+		padding: 0em 0em;	
+	}
+	.modal-content{
+		width: 100%;
+		height: 100%;
+		padding: 0em 0em;	
+	}
+.modal{
+	height: 100%;
+}
+
+</style>
+
+<script>
+	document.addEventListener("click",function (e){
+		if (e.target.classList.contains("gallery-item")){
+			const src = e.target.getAttribute("src");
+			document.querySelector(".modal-img").src = src;
+			const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+			myModal.show();
+		}
+	})
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+

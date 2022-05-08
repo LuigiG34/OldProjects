@@ -1,0 +1,45 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+div#ball{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: royalblue;
+    border-radius: 50%;
+    box-shadow: inset -25px -46px 38px -4px rgba(0,0,0,0.75);
+    animation: bouncing 0.5s infinite alternate;
+}
+div#ballshadow{
+    width: 60px;
+    height: 20px;
+    background-color: darkblue;
+    border-radius: 50%;
+    filter: blur(2px);
+    animation: shadow 0.5s infinite alternate;
+}
+@keyframes bouncing {
+    from{
+        transform: translateY(-42px);
+        width: 110px;
+        height: 90px;
+    }to{
+        transform: translateY(-250px);
+        width: 100px;
+        height: 100px;
+    }
+}
+@keyframes shadow {
+    from{
+        width: 100px;
+        height: 15px;
+    }to{
+        width: 40px;
+    }
+}

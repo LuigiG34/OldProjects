@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Fanta Landing Page</title>
+</head>
+<body class="bg-color-change">
+    <header>
+        <nav>
+            <ul class="d-flex align-items-center">
+                <div class="col-3">
+                    <li>
+                        <img src="assets/img/redlogo.png" id="logo" class="logo">
+                    </li>
+                </div>
+                <div class="d-flex col-9 justify-content-around align-items-center" id="nav">
+                    <li class="lead ">Home</li>
+                    <li class="lead ">Products</li>
+                    <li class="lead ">What's New</li>
+                    <li class="lead ">Newsletter</li>
+                    <li class="lead ">Contact</li>
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="d-flex justify-content-around align-items-center p-5">
+        <article class="col-7">
+            <h1>
+                TASTE THE NEW<br>
+                <span>FLAVOURS</span>
+            </h1>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum molestiae quam repellat quibusdam cupiditate ea doloribus numquam? Autem, expedita enim accusamus laboriosam veniam voluptas maiores consequatur non omnis assumenda. Quae!</p>
+            <button class="btn">VIEW ALL PRODUCTS</button>
+        </article>
+        <article class="col-3">
+            <img src="assets/img/strawberry.png" class="cannette">
+        </article>
+        <article class="col-1 d-flex flex-column p-5">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+        </article>
+    </section>
+    
+    <footer class="d-flex align-items-center justify-content-center p-2">
+        <img src="assets/img/strawberry.png" class="small-pic" onclick="changeFlavour('assets/img/redlogo.png','assets/img/strawberry.png','rgb(255, 100, 100)')">
+        <img src="assets/img/grape.png" class="small-pic" onclick="changeFlavour('assets/img/purplelogo.png','assets/img/grape.png','rgb(224, 43, 224)')">
+        <img src="assets/img/blueberry.png" class="small-pic" onclick="changeFlavour('assets/img/bluelogo.png','assets/img/blueberry.png','rgb(83, 114, 255)')">
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

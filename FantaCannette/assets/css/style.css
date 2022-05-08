@@ -1,0 +1,61 @@
+:root{
+    --red: rgb(255, 103, 103);
+    --blue: rgb(83, 114, 255);
+    --purple: rgb(218, 38, 218);
+}
+body{
+    background-color: var(--red);
+    color: rgb(255, 255, 255);
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+li:hover{
+    transform: translateY(5px);
+    cursor: pointer;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+}
+
+h1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 700;
+}
+span{
+    font-size: 75px;
+}
+button.btn{
+    background-color: #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: 0.6s ease;
+}
+button.btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px #ffffff;
+}
+i{
+    font-size: 25px;
+    transition: 0.6s ease;
+}
+i:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+img.small-pic{
+    width: 80px;
+    height: auto;
+    transition: 0.6s ease;
+}
+img.small-pic:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}

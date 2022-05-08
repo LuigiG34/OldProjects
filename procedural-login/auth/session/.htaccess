@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteRule ^website-home$ index.php
+RewriteRule ^user-registration$ register.php
+RewriteRule ^user-connection$ connection.php
+RewriteRule ^user-end-session$ deconnexion.php
+RewriteRule ^user-profile$ profile.php

@@ -1,0 +1,67 @@
+@media(max-width: 767px){
+	    div.scroll {
+        width: 100%;
+        overflow: auto;
+        text-align:justify;
+      }
+      .avis{
+      	width: 100%;
+      	border-bottom: solid lightgrey 1px;
+      }
+}
+@font-face{ font-family: LeaSpar; src: url(font/LeagueSpartan.otf);}
+/*Banner under logo*/
+header{
+	font-family: LeaSpar;
+	grid-area: h;
+	width: 100%;
+	height: fit-content;
+	background-image: url('img/background2.png');
+	background-size: cover;
+	background-position: center;
+
+}
+
+#banner{
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+#num{
+	padding: 0.5em;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	background-color: rgba(0, 23, 255, .4);
+	color: white;
+	transition: 0.6 ease;
+	font-size: medium;
+	font-family: Calibri;
+	transition: 0.7s ease;
+}
+#num:hover{
+	background-color: rgba(255, 255, 255, 1.0);
+	color: black;
+}
+
+
+.map-responsive {
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;>
+height:0;
+}
+
+.map-responsive iframe {
+padding: 1;
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+footer{
+	background-image: url('img/background2.png');
+	color: rgb(255, 255, 255);
+}
